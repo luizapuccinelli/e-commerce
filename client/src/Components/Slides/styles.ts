@@ -11,6 +11,11 @@ export const SwiperStyled = styled(Swiper)`
     width: 400px;
     background-color: white;
 
+    @media (max-width: 600px) {
+        height: 200px;
+        width: 200px;
+    }
+
     .swiper-button-next { color: rgba(216,164,251,1); }
     .swiper-button-prev { color: rgba(216,164,251,1); }
     .swiper-pagination {
@@ -23,5 +28,15 @@ export const SlideContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%
+    height: 100%;
+
+    img {
+        height: 400px;
+        width: 400px;
+
+        @media (max-width: 600px) {
+        height: 200px;
+        width: 200px;
+        }
+    }
 `

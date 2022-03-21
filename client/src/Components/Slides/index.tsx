@@ -24,7 +24,7 @@ export function Slides(props: SlidesProps) {
         {props.imageList.map((image)=>(
             <SwiperSlide key={image}>
                 <SlideContainer>
-                    <img src={image} width={400} height={400}/>
+                    <img src={image}/>
                 </SlideContainer>
             </SwiperSlide>
         ))}
