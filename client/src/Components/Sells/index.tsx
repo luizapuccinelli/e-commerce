@@ -25,7 +25,7 @@ export function SellsHero(props: SellsHeroProps){
     const [itemPrice, setItemPrice] = useState(0);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/item').then(function(response){
+        axios.get('https://giuka-ecommerce.herokuapp.com/item').then(function(response){
             setItems(response.data.data[0])
         })
     }, []);
