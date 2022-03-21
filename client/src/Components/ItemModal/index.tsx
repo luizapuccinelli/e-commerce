@@ -1,15 +1,16 @@
 
 import Modal from 'react-modal';
 import { AiFillCloseCircle,AiOutlineWhatsApp } from "react-icons/ai";
-import { ContactButton, ModalContainer, ModalInfo } from './styles';
+import { ContactButton, ModalContainer, ModalInfoLeft, ModalInfoRight } from './styles';
 import { useEffect, useState } from 'react';
+import { Slides } from '../Slides';
 
 interface ItemModalProps {
     isOpen: boolean;
     onRequestClose: () => void;
     itemName: string
     itemDescription: string
-    itemImage:string
+    itemImage:string[]
     itemPrice: number
   }
 
@@ -20,10 +21,10 @@ interface ItemModalProps {
 
     useEffect(()=>{
         setText(`Olá, tenho interesse neste item: ${props.itemName} com o valor de R$${props.itemPrice}`)
-    },[])
+    },[props.isOpen])
 
     function HandleMessage(){
-        setRedirect(`https://web.whatsapp.com/send?phone=5511950508190&text=${text}`)
+        setRedirect(`https://web.whatsapp.com/send?phone=5548992035815&text=${text}`)
     }
     return(
       <Modal
@@ -41,11 +42,11 @@ interface ItemModalProps {
           <AiFillCloseCircle />
         </button>
         <ModalContainer>
-            <ModalInfo>
+            <ModalInfoLeft>
                 <h2>{props.itemName}</h2>
-                <img src={props.itemImage} width={400} height={400}/>
-            </ModalInfo>
-            <ModalInfo>
+                <Slides imageList={props.itemImage}/>
+            </ModalInfoLeft>
+            <ModalInfoRight>
                 <p>{props.itemDescription}</p>
                 <h3>
                     {new Intl.NumberFormat('pt-BR', {
@@ -57,7 +58,7 @@ interface ItemModalProps {
                     <AiOutlineWhatsApp />
                     <h5>Tenho interesse</h5>
                 </ContactButton>
-            </ModalInfo>
+            </ModalInfoRight>
         </ModalContainer>
       </Modal>
     )

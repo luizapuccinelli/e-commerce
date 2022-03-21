@@ -30,7 +30,14 @@ export const ItemButton = styled.button`
     height: 300px;
     width: 300px;
     border-radius: 1rem;
+    color: var(--text-body);
     &:hover{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
+    h4 {
+        font-weight: 500;
+    }
+
+
 `
