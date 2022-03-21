@@ -13,6 +13,7 @@ export default function Home(){
       <Head>
         <title> Desapegos da Giuka </title>
       </Head>
+      <link rel="icon" href={'../assets/favicon.png'} />
       <Navbar searchBar={searchBar} setSearchBar={setSearchBar}/>
       <SellsHero searchBar={searchBar}/>
     </>

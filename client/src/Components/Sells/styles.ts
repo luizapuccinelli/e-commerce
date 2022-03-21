@@ -40,6 +40,4 @@ export const ItemButton = styled.button`
     h4 {
         font-weight: 500;
     }
-
-
 `

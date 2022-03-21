@@ -49,7 +49,7 @@ export function SellsHero(props: SellsHeroProps){
                     props.searchBar != '' ? 
                         items.filter((el) => el.name.includes(props.searchBar)).map((item)=>(
                         <ItemButton key={item.id}>
-                            <img src={item.imageUrl[0]} width={200} height={200}/>
+                            <img src={item.imageUrl[0]} height={200}/>
                             <h2>{item.name}</h2>
                             <h5>
                                 {new Intl.NumberFormat('pt-BR', {
@@ -63,7 +63,7 @@ export function SellsHero(props: SellsHeroProps){
                     :
                         items.map((item)=>(
                         <ItemButton key={item.id} onClick={e=>handleItemClick(item)}>
-                            <img src={item.imageUrl[0]} width={200} height={200}/>
+                            <img src={item.imageUrl[0]} height={200}/>
                             <h2>{item.name}</h2>
                             <h4>
                                 {new Intl.NumberFormat('pt-BR', {
