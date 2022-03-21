@@ -24,7 +24,8 @@ interface ItemModalProps {
     },[props.isOpen])
 
     function HandleMessage(){
-        setRedirect(`https://web.whatsapp.com/send?phone=5548992035815&text=${text}`)
+        setText(text.replace(/\s/g, '+'))
+        setRedirect(`https://api.whatsapp.com/send/?phone=5548992035815&text=${text}&app_absent=0`)
     }
     return(
       <Modal

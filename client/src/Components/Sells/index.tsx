@@ -29,7 +29,7 @@ export function SellsHero(props: SellsHeroProps){
             setItems(response.data.data[0])
         })
     }, []);
-    
+
     function handleCloseItemModal(){
 		setItemModalOpen(false);
 	}
