@@ -34,7 +34,9 @@ export const ItemButton = styled.button`
     &:hover{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-
+    h2 {
+        padding: 0.5rem;
+    }
     h4 {
         font-weight: 500;
     }

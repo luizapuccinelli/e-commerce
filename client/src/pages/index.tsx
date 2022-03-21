@@ -7,7 +7,6 @@ import { GlobalStyle } from '../styles/GlobalStyles'
 
 export default function Home(){
   const [searchBar, setSearchBar] = useState<string>('')
-  console.log(searchBar)
   return(
     <>
       <GlobalStyle />
