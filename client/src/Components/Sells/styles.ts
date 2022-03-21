@@ -27,7 +27,7 @@ export const ItemsContainer = styled.div`
 export const ItemButton = styled.button`
     border: none;
     background-color: transparent;
-    height: 300px;
+    height: 350px;
     width: 300px;
     border-radius: 1rem;
     color: var(--text-body);
