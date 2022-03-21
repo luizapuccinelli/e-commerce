@@ -31,10 +31,10 @@ export const SlideContainer = styled.div`
     height: 100%;
 
     img {
-        height: 400px;
+        max-width: 400px;
 
         @media (max-width: 600px) {
-        height: 200px;
+        max-width: 200px;
         }
     }
 `
