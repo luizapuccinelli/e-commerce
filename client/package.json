@@ -13,12 +13,12 @@
     "@types/styled-components": "^5.1.24",
     "axios": "^0.26.1",
     "next": "12.1.0",
-    "react": "^16.8",
-    "react-dom": "^16.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "react-is": "^16.8",
+    "react-is": "^18.0.0-rc.2-next-b9de50d2f-20220308",
     "react-modal": "^3.14.4",
-    "styled-components": "^5.0.0",
+    "styled-components": "^5.3.3",
     "swiper": "^8.0.7"
   },
   "devDependencies": {
